@@ -38,7 +38,7 @@ const [total, setTotal] = useState(0)
   let numeros = []
   for (let index = 0; index < limitPage; index++) {
     
-    numeros.push(  <button key={index} onClick={handlerPager} value={index}>{index}</button> )
+    numeros.push(  <button key={index} onClick={handlerPager} value={index}>{index+1}</button> )
   }
 
   return (
